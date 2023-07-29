@@ -57,4 +57,4 @@ bob@dylan:~$ |
 ```
 
 <p><h2>Author</h2></p> :fire:
-- [betiniakarandut](github.com/betiniakarandut)
+- [betiniakarandut](https://www.github.com/betiniakarandut)

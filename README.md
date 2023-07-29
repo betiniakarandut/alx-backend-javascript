@@ -10,4 +10,4 @@ This repository is dedicated to backend projects within the short specialization
 | [0x02-ES6 Clases](./0x02-ES6_class) | Directory |
 
 <p><h2>Author</h2></p> :fire:
-- [betiniakarandut](github.com/betiniakarandut)
+- [betiniakarandut](https://www.github.com/betiniakarandut)
