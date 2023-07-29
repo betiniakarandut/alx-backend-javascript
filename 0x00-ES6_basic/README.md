@@ -22,4 +22,5 @@ ES6 basics.
 | [2. Arrow functions](./2-arrow.js) | Rewrite the following standard function to use ES6’s arrow syntax of the function add (it will be an anonymous function after) |
 
 <p><h2>Author</h2></p> :fire:
-- [betiniakarandut](https://www.github.com/betiniakarandut)
+
+- [@betiniakarandut](https://twitter.com/betiniakarandut)
