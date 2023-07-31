@@ -1,5 +1,5 @@
 function getListStudents() {
-	return([
+	return[
 		{
 			id: 1,
 			firstName: 'Guillaume',
@@ -15,7 +15,7 @@ function getListStudents() {
 			firstName: 'Serena',
 			location: 'San Francisco'
 		}
-	])
+	]
 }
 
-// console.log(getListStudents()[0].location);
+console.log(getListStudents());
