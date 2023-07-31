@@ -1,4 +1,4 @@
-export function getListStudents() {
+export default function getListStudents() {
 	return[
 		{
 			id: 1,
@@ -18,4 +18,4 @@ export function getListStudents() {
 	]
 }
 
-// console.log(getListStudents());
+console.log(getListStudents());
