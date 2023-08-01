@@ -1,5 +1,5 @@
 export default function getListStudents() {
-	return[
+	const arr = [
 		{
 			id: 1,
 			firstName: 'Guillaume',
@@ -16,6 +16,7 @@ export default function getListStudents() {
 			location: 'San Francisco'
 		}
 	]
+	return arr
 }
 
 console.log(getListStudents());
