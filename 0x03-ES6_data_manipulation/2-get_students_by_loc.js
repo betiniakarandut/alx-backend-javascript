@@ -1,8 +1,11 @@
 import getListStudents from './0-get_list_students.js';
 
-const { location: 'San Francisco' } = city
-const filtered = getListStudents().filter((students) => {
-	return students.city
-})
+export default function getStudentsByLocation(student, city) {
+	const filtered = student.filter((students) => {
+		return students.location === city;
+	});
+	return filtered;
+}
 
-console.log(filtered);
+// const student = getListStudents()
+// console.log(getStudentsByLocation(student, 'San Francisco'));
