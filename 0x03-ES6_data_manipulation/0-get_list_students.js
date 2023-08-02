@@ -16,7 +16,7 @@ export default function getListStudents() {
 			location: 'San Francisco'
 		}
 	]
-	return arr
+	return arr;
 }
 
-console.log(getListStudents());
+// console.log(getListStudents());
