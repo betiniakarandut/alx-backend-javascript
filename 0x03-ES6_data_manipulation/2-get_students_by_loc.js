@@ -6,3 +6,6 @@ export default function getStudentsByLocation(student, city) {
 	});
 	return filtered;
 }
+
+//const students = getListStudents();
+//console.log(getStudentsByLocation(students, 'San Francisco'));
