@@ -9,6 +9,6 @@ export default function getStudentIdsSum(students) {
 	return reduced;
 }
 
-const students = getListStudents();
-const value = getStudentIdsSum(students);
-console.log(value);
+// const students = getListStudents();
+// const value = getStudentIdsSum(students);
+// console.log(value);

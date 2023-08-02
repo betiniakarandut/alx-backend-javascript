@@ -6,6 +6,3 @@ export default function getListStudentIds(arr) {
 	const arr2 = arr.map(i => i.id);
 	return arr2;
 }
-
-// console.log(getListStudentIds("hello"));
-// console.log(getListStudentIds(getListStudents));
