@@ -1,6 +1,9 @@
 function displayMessage(message) {
 	if(!message) {
-		return;
+		console.log("No message found");
 	}
-	return message;
+	console.log(message);
 };
+
+
+module.exports = displayMessage;
