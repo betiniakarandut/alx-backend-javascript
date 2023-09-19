@@ -1,7 +1,4 @@
-function displayMessage(message){
-	if(!message){
-		console.log("No message found");
-	}
+function displayMessage(message) {
 	console.log(message);
 };
 
