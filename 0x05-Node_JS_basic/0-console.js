@@ -3,4 +3,4 @@ function displayMessage(message) {
 		return;
 	}
 	return message;
-}
+};
