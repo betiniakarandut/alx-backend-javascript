@@ -1,4 +1,5 @@
-/** program that will be executed through command line
+/** 
+ * program that will be executed through command line
  */
 
 process.stdout.write('Welcome to Holberton School, what is your name?\n');
