@@ -1,18 +1,16 @@
-// program that will be executed through command line
+/** program that will be executed through command line
+ */
 
-const readline = require('readline')
+process.stdout.write('Welcome to Holberton School, what is your name?\n');
 
-const read = readline.createInterface({
-    input: process.stdin
-    output: process.stdout
-})
+process.stdin.on('readable', () => {
+  const INPUT = process.stdin.read();
 
-read.question('Welcome to Holberton School, what is your name? \n', (res) => {
-    console.log(Your name is: ${res})`);
-    read.close();
+  if (INPUT) {
+    process.stdout.write(`Your name is: ${INPUT}`);
+  }
 });
 
-read.on('close', () => {
-    console.log('This important software is now closing\n');
-    process.exit(0);
+process.stdin.on('end', () => {
+  process.stdout.write('This important software is now closing\n');
 });
