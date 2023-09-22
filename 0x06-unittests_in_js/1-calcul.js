@@ -11,19 +11,19 @@ function calculateNumber(type, arg1, arg2) {
     }
     if (type === 'SUBTRACT') {
         subtract = Math.round(arg1) - Math.round(arg2);
-        return subtract
+        return subtract;
     }
     if (type === 'DIVIDE') {
         if (Math.round(arg2) === 0){
-            return`'Error'`
+            return`'Error'`;
         }
         divide = Math.round(arg1) / Math.round(arg2);
-        return divide
+        return divide;
     }
 }
 
 // console.log(calculateNumber('SUM', 1.4, 4.5))
 // console.log(calculateNumber('SUBTRACT', 1.4, 4.5))
-// console.log(calculateNumber('DIVIDE', 1.4, 4.5))
-// console.log(calculateNumber('DIVIDE', 1.4, 0))
+console.log(calculateNumber('DIVIDE', 1.4, 4.5))
+console.log(calculateNumber('DIVIDE', 1.4, 0))
 module.exports = calculateNumber;
