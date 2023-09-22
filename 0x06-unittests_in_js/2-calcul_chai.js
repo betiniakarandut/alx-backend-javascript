@@ -11,14 +11,14 @@ function calculateNumber(type, arg1, arg2) {
     }
     if (type === 'SUBTRACT') {
         subtract = Math.round(arg1) - Math.round(arg2);
-        return subtract
+        return subtract;
     }
     if (type === 'DIVIDE') {
         if (Math.round(arg2) === 0){
-            return`'Error'`
+            return`'Error'`;
         }
         divide = Math.round(arg1) / Math.round(arg2);
-        return divide
+        return divide;
     }
 }
 
