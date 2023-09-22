@@ -1,23 +1,23 @@
-/** Returns rounded sum of arg1 and arg2
+/** Returns rounded sum of a and b
  * @param
  * type: type of arithmetic operation
- * arg1 and arg2: values to check
+ * a and b: values to check
  */
 
-function calculateNumber(type, arg1, arg2) {
+function calculateNumber(type, a, b) {
     if (type === 'SUM') {
-        add = Math.round(arg1) + Math.round(arg2);
+        add = Math.round(a) + Math.round(b);
         return add;
     }
     if (type === 'SUBTRACT') {
-        subtract = Math.round(arg1) - Math.round(arg2);
+        subtract = Math.round(a) - Math.round(b);
         return subtract;
     }
     if (type === 'DIVIDE') {
-        if (Math.round(arg2) === 0){
+        if (Math.round(b) === 0){
             return`'Error'`;
         }
-        divide = Math.round(arg1) / Math.round(arg2);
+        divide = Math.round(a) / Math.round(b);
         return divide;
     }
 }

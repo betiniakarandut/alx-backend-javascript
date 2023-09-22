@@ -6,20 +6,20 @@
 
 Utils = {};
 
-Utils.calculateNumber = function calculateNumber(type, arg1, arg2) {
+Utils.calculateNumber = function calculateNumber(type, a, b) {
     if (type === 'SUM') {
-        add = Math.round(arg1) + Math.round(arg2);
+        add = Math.round(a) + Math.round(b);
         return add;
     }
     if (type === 'SUBTRACT') {
-        subtract = Math.round(arg1) - Math.round(arg2);
+        subtract = Math.round(a) - Math.round(b);
         return subtract;
     }
     if (type === 'DIVIDE') {
-        if (Math.round(arg2) === 0){
-            return (`'Error'`);
+        if (Math.round(b) === 0){
+            return (`'Error'`).toLowerCase();
         }
-        divide = Math.round(arg1) / Math.round(arg2);
+        divide = Math.round(a) / Math.round(b);
         return divide;
     }
     return 'Not Found';
