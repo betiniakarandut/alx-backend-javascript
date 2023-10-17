@@ -1,31 +1,29 @@
-/**
- * Utils module
- * @property
- * calculateNumber
- */
-
-Utils = {};
-
-Utils.calculateNumber = function calculateNumber(type, a, b) {
-    if (type === 'SUM') {
-        add = Math.round(a) + Math.round(b);
-        return add;
+class Utils {
+    static calculateNumber(type, a, b) {
+      const roundA = Math.round(a);
+      const roundB = Math.round(b);
+      let result;
+  
+      switch (type) {
+        case 'SUM':
+          result = roundA + roundB;
+          break;
+        case 'SUBTRACT':
+          result = roundA - roundB;
+          break;
+        case 'DIVIDE':
+          if (roundB === 0) {
+            result = 'Error';
+          } else {
+            result = roundA / roundB;
+          }
+          break;
+        default:
+          result = 'Unrecognised type';
+          break;
+      }
+      return result;
     }
-    if (type === 'SUBTRACT') {
-        subtract = Math.round(a) - Math.round(b);
-        return subtract;
-    }
-    if (type === 'DIVIDE') {
-        if (Math.round(b) === 0){
-            return (`'Error'`).toLowerCase();
-        }
-        divide = Math.round(a) / Math.round(b);
-        return divide;
-    }
-    return 'Not Found';
-}
-// console.log(Utils.calculateNumber('SUM', 1.4, 4.5))
-// console.log(Utils.calculateNumber('SUBTRACT', 1.4, 4.5))
-// console.log(Utils.calculateNumber('DIVIDE', 1.4, 4.5))
-// console.log(Utils.calculateNumber('DIVIDE', 1.4, 0))
-module.exports = Utils
+  }
+  module.exports = Utils;
+  

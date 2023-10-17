@@ -1,17 +1,11 @@
-const getPaymentTokenFromAPI = require('./6-payment_token.js')
-const { expect } = require("chai");
+const chai = require('chai');
+const sinon = require('sinon');
+const { expect } = chai;
+const getPaymentTokenFromAPI = require('./6-payment_token');
 
-describe.only('Test getPaymentTokenFromAPI', function(done) {
-    it('Should return an async promise', function() {
-        getPaymentTokenFromAPI(true, function(result) {
-            expect(result).to.equal({data: 'Successful response from the API' })
-            done();
-        });
-    });
-    it('Should return an async promise', function(done) {
-        getPaymentTokenFromAPI(false, function(result) {
-            expect(result).to.equal({data: 'Successful response from the API' })
-            done();
-        });
-    });
+describe('getPaymentTokenFromAPI()', () => {
+	it('should return a promise that resolves with an object containing a successful response from the API', async () => {
+		const paymentToken = await getPaymentTokenFromAPI();
+		expect(paymentToken.data).to.equal('Successful response from the API');
+	});
 });
